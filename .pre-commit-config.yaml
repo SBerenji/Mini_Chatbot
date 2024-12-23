@@ -12,3 +12,4 @@ repos:
         additional_dependencies: # Ensures additional dependencies are installed
           - requests
           - python-dotenv
+          - flask
