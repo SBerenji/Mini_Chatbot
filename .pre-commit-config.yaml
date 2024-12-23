@@ -1,0 +1,14 @@
+# .pre-commit-config.yaml
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0 # Using the latest stable version
+    hooks:
+      - id: check-yaml
+
+  - repo: https://github.com/pylint-dev/pylint
+    rev: v3.3.1 # Replacing with latest stable version
+    hooks:
+      - id: pylint
+        additional_dependencies: # Ensures additional dependencies are installed
+          - requests
+          - python-dotenv
