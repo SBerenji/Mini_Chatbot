@@ -29,7 +29,7 @@ def chat():
     response = get_chat_response(msg)
 
     # Return the response as JSON
-    return jsonify({"response": response})
+    return response
 
 
 def get_chat_response(text):
