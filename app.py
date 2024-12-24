@@ -1,7 +1,7 @@
 """
 Flask application for a simple chatbot 
 """
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request
 from yelp_data import get_restaurants, get_sights
 
 
