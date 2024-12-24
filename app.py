@@ -1,7 +1,7 @@
 """
 Flask application for a simple chatbot 
 """
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request
 from yelp_data import get_restaurants, get_sights
 
 
@@ -29,7 +29,7 @@ def chat():
     response = get_chat_response(msg)
 
     # Return the response as JSON
-    return jsonify({"response": response})
+    return response
 
 
 def get_chat_response(text):
